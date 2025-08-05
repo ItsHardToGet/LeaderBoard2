@@ -57,7 +57,10 @@ const Register= async (req,res)=>{
 }
 const findAll=async(req,res)=>{
 try{
-    const data=await AuthModel.find({"role":"Volunteer"})
+    const data=await AuthModel.find({"role":{$in:["Volunteer","Intern"]}})
+//     const data = await AuthModel.find({
+//   role: { $in: ["intern", "volunteer"] }
+// });
     return res.send({"err":0,"msg":"data received in pdata","pdata":data})
 }catch(e){
     return res.send({"err":1,"msg":"error occured","error":e})
