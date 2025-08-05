@@ -1,1 +1,1 @@
-frontend link:https://magenta-halva-8aeee4.netlify.app/
+frontend link: https://wonderful-malabi-ef77bc.netlify.app/
